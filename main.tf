@@ -3,12 +3,12 @@ terraform {
     aws = {
       source = "hashicorp/aws"
     }
+  }
 
-    backend "s3" {
-      bucket = "c6d0b598-0c96-2aa1-a55f-0e2b7f13bb5d-backend"
-      key = "terraform/webapp/terraform.tfstate"
-      region = "us-east-1"
-    }
+  backend "s3" {
+    bucket = "c6d0b598-0c96-2aa1-a55f-0e2b7f13bb5d-backend"
+    key = "terraform/webapp/terraform.tfstate"
+    region = "us-east-1"
   }
 }
 
